@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-idwall" version="1.0.0">
+    <name>Cordova Plugin Idwall</name>
+    <description>Allows uses the official idwall sdk https://idwall.co/sdk-mobile/</description>
+    <license>Apache 2.0</license>
+    <repo>https://github.com/janrsilva/cordova-plugin-idwall.git</repo>
+    <keywords>cordova,idwall</keywords>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="IdwallPlugin">
+                <param name="android-package" value="com.janrsilva.cordova.plugin.IdwallPlugin"/>
+            </feature>
+        </config-file>
+        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+            <application android:theme="@style/Theme.AppCompat.NoActionBar" />
+        </edit-config>
+        <source-file src="src/android/IdwallPlugin.java" target-dir="src/com/janrsilva/cordova/plugin" />
+        <framework src="co.idwall:idwall-sdk:1.0.0" />
+    </platform>
+    <engines>
+      <engine name="cordova" version=">=9.0.0" />
+      <engine name="cordova-android" version=">=8.0.0" />
+      <engine name="cordova-ios" version=">=5.0.0" />
+    </engines>
+    <js-module src="www/idwall.js" name="Idwall">
+        <clobbers target="idwall" />
+        <clobbers target="cordova.plugins.idwall" />
+        <clobbers target="plugin.idwall" />
+    </js-module>
+</plugin>
