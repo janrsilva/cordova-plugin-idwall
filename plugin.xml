@@ -11,9 +11,6 @@
                 <param name="android-package" value="com.janrsilva.cordova.plugin.IdwallPlugin"/>
             </feature>
         </config-file>
-        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
-            <application android:theme="@style/Theme.AppCompat.NoActionBar" />
-        </edit-config>
         <source-file src="src/android/IdwallPlugin.java" target-dir="src/com/janrsilva/cordova/plugin" />
         <framework src="co.idwall:idwall-sdk:1.0.0" />
     </platform>
