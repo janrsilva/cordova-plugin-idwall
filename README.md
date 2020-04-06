@@ -1,7 +1,7 @@
 ## cordova-plugin-idwall
 Esse plugin permite usar os sdks da idwall para Android e iOS.
 
-**Aviso:** A construção desse plugin não é mantida e possui nenhum vínculo vinculo com a https://idwall.co/, esse é um projeto open source.
+**Aviso:** A construção desse plugin não é mantida e possui nenhum vínculo com a https://idwall.co/, esse é um projeto open source.
 
 Logo abaixo, está sendo construída uma documentação de uso.
 
