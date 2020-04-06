@@ -35,3 +35,13 @@ O SDK do idwall exige que o tema do android seja o `Theme.AppCompat` ou ascenden
     </edit-config>
 </platform>
 ```
+
+*Obs: para instrução acima funcionar será necessário adicionar o namespace android ao config.xml, ignore caso já tenha o feito*
+
+```xml
+<!-- config.xml -->
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="br.com.example.app" [...] xmlns:android="http://schemas.android.com/apk/res/android">
+    [...]
+</widget>
+```
